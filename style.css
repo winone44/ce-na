@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root {
+    --white: white;
+    --black: black;
+    --grey: #f5f3f4;
+    --red: #cc0100;
+}
+
+div {
+    border: 1px solid black;
+}
+
+* {
+    font-family: 'Questrial', sans-serif;
+}
+
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4 p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p {
+    margin: 5px 0 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+button, input[type=submit], p {
+    font-weight: bold;
+}
+
+#navbar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+    font-size: 1.4rem;
+}
+
+.logo {
+    margin: 0 0 0 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    width: 110px;
+}
+
+#nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+
+#nav-links a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nav-links > a:link, #nav-links > a:visited, #nav-links > a:active   {
+    color: var(--black);
+}
+
+#nav-links a:hover {
+    color: var(--red);
+}
+
+#nav-links .horizontal-line {
+    display: none;
+}
+
+#mobile-menu-trigger-box {
+    margin: 10px;
+}
+
+#mobile-menu-trigger {
+    width: 100px;
+    height: 38px;
+    color: var(--white);
+    background-color: var(--red);
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+
+    section {
+        max-width: 900px;
+    }
+
+    #navbar {
+        display: block;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    #nav-links {
+        display: none;
+        justify-content: center;
+    }
+
+    #nav-links ul {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--red);
+        width: 100%;
+    }
+    #nav-links a {
+        text-align: center;
+        color: white;
+    }
+
+    #nav-links a:hover {;
+        color: grey;
+    }
+
+    #nav-links .horizontal-line {
+        display: block;
+        width: 100%;
+        border-color: var(--white);
+    }
+
+    #mobile-menu-trigger {
+        display: block;
+    }
+
+
+}
