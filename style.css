@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/font/Gilroy-Light.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/font/Gilroy-ExtraBold.otf');
+    font-weight: 800;
+}
+
 :root {
     --white: white;
     --black: black;
@@ -12,7 +25,8 @@
 /*}*/
 
 * {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Gilroy', sans-serif;
+    /*font-family: 'Questrial', sans-serif;*/
 }
 
 
@@ -40,10 +54,6 @@ h2 {
 
 h3 {
     font-size: 1rem;
-}
-
-button, input[type=submit], p {
-    font-weight: bold;
 }
 
 #navbar {
@@ -138,6 +148,35 @@ button, input[type=submit], p {
     overflow: hidden;
 }
 
+.first-parallax {
+    position: relative;
+    margin: 0 20px;
+    background-image: url("assets/img/20230606_172256.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first-parallax-red-box {
+    position: absolute;
+    border: 3px solid var(--red);
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.first-parallax-red-box > header {
+    color: white;
+    max-width: 50%;
+}
+
 
 .our-knowledge {
     background-color: var(--grey);
@@ -222,14 +261,28 @@ button, input[type=submit], p {
 }
 
 .slide-img {
-    width: 240px;
+    position: relative;
+    width: 230px;
     height: 180px;
     overflow: hidden;
 }
 
 .slide-img img {
-    max-height: 100%;
-    object-fit: contain;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slider-red-square {
+    position: absolute;
+    border: 3px solid var(--red);
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .slider-item-text {
@@ -255,7 +308,6 @@ button, input[type=submit], p {
     background-color: var(--red);
     border: 0;
     color: var(--white);
-    font-weight: bold;
     cursor: pointer;
     padding: .8em 2.5em;
     transition: .2s;
@@ -323,7 +375,6 @@ button, input[type=submit], p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .second-parallax-img-box {

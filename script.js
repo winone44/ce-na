@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const sliderContainer = document.querySelector('.slider-container');
     const sliderItem = document.querySelector('.slider-item');
     const sliderWrapper = document.querySelector('.slider-wrapper');
-    const prevButton = document.querySelector('.slider-prev');
-    const nextButton = document.querySelector('.slider-next');
 
     const containerWidth = sliderContainer.clientWidth;
     const itemWidth = sliderItem.offsetWidth;
@@ -26,55 +24,54 @@ document.addEventListener('DOMContentLoaded', function () {
 
     sliderWrapper.style.width = wrapperWidth + 'px';
 
-    function checkButtons() {
-        if (position === 0) {
-            prevButton.classList.add('disabled');
-        } else {
-            prevButton.classList.remove('disabled');
-        }
 
-        if (position === -(wrapperWidth - visibleWidth)) {
-            nextButton.classList.add('disabled');
-        } else {
-            nextButton.classList.remove('disabled');
-        }
-    }
-
-    checkButtons();
-
-    prevButton.addEventListener('click', function () {
+    function moveSliderPrev() {
         if (position !== 0) {
             position += itemWidth;
             sliderWrapper.style.transform = 'translateX(' + position + 'px)';
-            checkButtons();
         }
-    });
+    }
 
-    nextButton.addEventListener('click', function () {
+    function moveSliderNext() {
         if (position !== -(wrapperWidth - visibleWidth)) {
             position -= itemWidth;
             sliderWrapper.style.transform = 'translateX(' + position + 'px)';
-            checkButtons();
         }
-    });
+    }
 
     // Mobile
     let touchStartX = 0;
     let touchEndX = 0;
 
+    sliderWrapper.addEventListener('mousedown', function (event) {
+        touchStartX = event.pageX;
+    });
+
     sliderWrapper.addEventListener('touchstart', function (event) {
-        touchStartX = event.touches[0].clientX;
+        touchStartX = event.touches[0].pageX;
+    });
+
+    sliderWrapper.addEventListener('mousemove', function (event) {
+        touchEndX = event.pageX;
     });
 
     sliderWrapper.addEventListener('touchmove', function (event) {
-        touchEndX = event.touches[0].clientX;
+        touchEndX = event.touches[0].pageX;
+    });
+
+    sliderWrapper.addEventListener('mouseup', function () {
+        if (touchEndX < touchStartX) {
+            moveSliderNext();
+        } else if (touchEndX > touchStartX) {
+            moveSliderPrev();
+        }
     });
 
     sliderWrapper.addEventListener('touchend', function () {
         if (touchEndX < touchStartX) {
-            nextButton.click();
+            moveSliderNext();
         } else if (touchEndX > touchStartX) {
-            prevButton.click();
+            moveSliderPrev();
         }
     });
 });
