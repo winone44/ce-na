@@ -134,9 +134,10 @@ h3 {
 
 .main-swiper-slide {
     filter: blur(4px);
+    transition: filter .2s !important;
 }
 
-.swiper-slide-active, .swiper-slide-next {
+.swiper-slide-active, .swiper-slide-next, .swiper-slide-prev {
     filter: blur(0);
 }
 
