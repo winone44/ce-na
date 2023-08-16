@@ -18,6 +18,10 @@
     --black: black;
     --grey: #f5f3f4;
     --red: #cc0100;
+
+    --swiper-pagination-color: var(--red);
+    --swiper-pagination-bullet-inactive-color: rgba(0,0,0,0);
+    --swiper-pagination-bullet-inactive-opacity: 1;
 }
 
 /*div {*/
@@ -127,6 +131,23 @@ h3 {
     width: 50%;
 }
 
+
+.main-swiper-slide {
+    filter: blur(4px);
+}
+
+.swiper-slide-active, .swiper-slide-next {
+    filter: blur(0);
+}
+
+.swiper-pagination {
+    text-align: left !important;
+}
+
+.swiper-pagination-bullet {
+    border: 1px solid var(--red);
+}
+
 .upcoming-training-courses {
     display: flex;
     justify-content: flex-start;
@@ -174,7 +195,94 @@ h3 {
 
 .first-parallax-red-box > header {
     color: white;
-    max-width: 50%;
+    max-width: 40%;
+    margin: 20px;
+}
+
+.first-parallax-red-box > header > p {
+    font-size: 1.4rem;
+    font-family: 'Questrial', sans-serif;
+    font-weight: bold;
+    line-height: 1.6em;
+}
+
+.first-parallax-red-box > aside {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.first-parallax-red-box > aside > a {
+    color: white;
+}
+
+.first-parallax-red-box > aside > a:hover {
+    color: black;
+}
+
+.first-parallax-red-box > aside > a:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.first-parallax-red-box > aside > a > svg {
+    height: 20px;
+    width: 20px;
+}
+
+/*.our-trainers-slider-item {*/
+/*    width: 230px;*/
+/*    height: 500px !important;*/
+/*    text-align: center;*/
+/*    padding: 30px 20px;*/
+/*    display: flex !important;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.our-trainers-slide-img {*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    overflow: hidden;*/
+/*    border-radius: 50%;*/
+/*    border: 2px solid var(--red);*/
+/*}*/
+
+/*.our-trainers-slide-img img {*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    object-fit: cover;*/
+/*    object-position: center;*/
+/*}*/
+
+
+.mySwiper2 {
+    width: 100%;
+    height: 100%;
+}
+
+.our-trainers-swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-trainers-slide-img {
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid var(--red);
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -218,23 +326,6 @@ h3 {
     transform: scale(0.9);
 }
 
-.slider-nav {
-    display: flex;
-}
-
-.slider-nav > button {
-    background-color: rgba(0,0,0,0);
-    border: 0;
-    cursor: pointer;
-}
-
-.disabled {
-    color: var(--grey);
-}
-
-.slider-nav > p {
-    margin: 0;
-}
 
 .slider-container {
     overflow: hidden;
