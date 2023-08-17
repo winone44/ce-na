@@ -126,6 +126,7 @@ h3 {
 .first-section {
     display: flex;
     justify-content: flex-start;
+    padding-left: 50px;;
 }
 
 .first-section > div > header > hr {
@@ -215,11 +216,12 @@ h3 {
 .upcoming-training-courses {
     display: flex;
     justify-content: flex-start;
+    padding: 50px 0 50px 50px;
 }
 
 .upcoming-training-courses > header {
     width: 30%;
-    padding: 20px;
+    padding-right: 20px;
 }
 
 .upcoming-training-courses > header > hr {
@@ -279,7 +281,7 @@ h3 {
 
 .first-parallax {
     position: relative;
-    margin: 0 20px;
+    margin: 0 40px;
     background-image: url("assets/img/20230606_172256.png");
     min-height: 500px;
     background-attachment: fixed;
@@ -365,6 +367,9 @@ h3 {
 /*    object-position: center;*/
 /*}*/
 
+.our-trainers > header > h1 {
+    text-align: center;
+}
 
 .mySwiper2 {
     width: 100%;
@@ -372,18 +377,20 @@ h3 {
 }
 
 .our-trainers-swiper-slide {
-    text-align: center;
     font-size: 18px;
     background: #fff;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .our-trainers-slide-img {
     overflow: hidden;
     border-radius: 50%;
     border: 2px solid var(--red);
+    width: 200px;
 }
 
 .swiper-slide img {
@@ -412,7 +419,7 @@ h3 {
 .our-knowledge {
     background-color: var(--grey);
     display: flex;
-    padding: 40px 0 40px 40px;
+    padding: 50px 0 50px 50px;
 }
 
 .our-knowledge > header {
@@ -566,9 +573,16 @@ h3 {
 }
 
 .folder-image-box {
-    height: 150px;
-    width: 300px;
+    height: 250px;
+    width: 100%;
     overflow: hidden;
+}
+
+div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .folder-button {
@@ -809,11 +823,22 @@ textarea:focus-within {
         display: block;
     }
 
+    .first-section {
+        padding-left: 25px;
+    }
+
+    .upcoming-training-courses {
+        padding: 25px 0 25px 25px;
+    }
+
+    .first-parallax {
+        margin: 0 20px;
+    }
 
     .our-knowledge {
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        padding: 25px 0 25px 25px;
     }
 
     .our-knowledge > header {
