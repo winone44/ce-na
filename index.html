@@ -7,7 +7,7 @@
           content="Szkolenia i kursy, które podniosą Twoje kwalifikacje zawodowe. Radzenie sobie ze stresem, poprawa snu – samodoskonalenie!">
     <title>Centrum Edukacji Never Average</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="icon" href="/assets/img/logo-cena-czarna-100x100.png">
     <style>
 
@@ -26,13 +26,9 @@
     <nav id="nav-links">
         <ul>
             <li><a href="#">Start</a></li>
-            <hr class="horizontal-line"/>
             <li><a href="#">Nasze szkolenia</a></li>
-            <hr class="horizontal-line"/>
             <li><a href="#">O nas</a></li>
-            <hr class="horizontal-line"/>
             <li><a href="#">Blog</a></li>
-            <hr class="horizontal-line"/>
             <li><a href="#">Kontakt</a></li>
         </ul>
     </nav>
@@ -42,15 +38,15 @@
         <div>
             <header>
                 <h1>Rozwiń swój potencjał!</h1>
-                <hr>
+                <hr style="width: 100px; border: 8px solid var(--red);">
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                     labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo</p>
             </header>
-            <div>
-                <button>Szkól się!</button>
-                <button>Kontakt</button>
+            <div class="first-section-buttons">
+                <button id="educate-yourself-button">Szkól się!</button>
+                <button id="contact-button">Kontakt</button>
             </div>
-            <div>
+            <div class="first-section-contact-buttons">
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                          class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -118,7 +114,7 @@
 <section class="upcoming-training-courses">
     <header>
         <h1>Najbliższe szkolenia</h1>
-        <hr>
+        <hr style="width: 100px; border: 3px solid var(--red);">
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
             dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
             clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
@@ -131,13 +127,13 @@
             </div>
             <div>
                 <h2>Etyka w obsłudze klienta</h2>
-                <hr>
+                <hr style="width: 70px; border: 2px solid var(--red);">
                 <p>12.07.2023 r.</p>
                 <p>Godz. 18:00</p>
                 <p>835,45 zł</p>
-                <div>
-                    <button>Zapisz się!</button>
-                    <button>Kontakt</button>
+                <div class="join-buttons">
+                    <button class="sign-up-button">Zapisz się!</button>
+                    <button class="contact-button">Kontakt</button>
                 </div>
             </div>
         </div>
@@ -147,13 +143,13 @@
             </div>
             <div>
                 <h2>Etyka w obsłudze klienta</h2>
-                <hr>
+                <hr style="width: 70px; border: 2px solid var(--red);">
                 <p>12.07.2023 r.</p>
                 <p>Godz. 18:00</p>
                 <p>835,45 zł</p>
-                <div>
-                    <button>Zapisz się!</button>
-                    <button>Kontakt</button>
+                <div class="join-buttons">
+                    <button class="sign-up-button">Zapisz się!</button>
+                    <button class="contact-button">Kontakt</button>
                 </div>
             </div>
         </div>
@@ -163,13 +159,13 @@
             </div>
             <div>
                 <h2>Etyka w obsłudze klienta</h2>
-                <hr>
+                <hr style="width: 70px; border: 2px solid var(--red);">
                 <p>12.07.2023 r.</p>
                 <p>Godz. 18:00</p>
                 <p>835,45 zł</p>
-                <div>
-                    <button>Zapisz się!</button>
-                    <button>Kontakt</button>
+                <div class="join-buttons">
+                    <button class="sign-up-button">Zapisz się!</button>
+                    <button class="contact-button">Kontakt</button>
                 </div>
             </div>
         </div>
@@ -180,7 +176,8 @@
     <div class="first-parallax-red-box">
         <header>
             <h1>Lorem Ipsum</h1>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
         </header>
         <aside>
             <a href="#">
@@ -224,7 +221,7 @@
                             invidunt ut labore et dolore magna</p>
                     </div>
                     <div>
-                        <button>Szkolenia Janka</button>
+                        <button class="check-courses-button">Szkolenia Janka</button>
                     </div>
                 </div>
                 <div class="swiper-slide our-trainers-swiper-slide">
@@ -237,7 +234,7 @@
                             invidunt ut labore et dolore magna</p>
                     </div>
                     <div>
-                        <button>Szkolenia Janka</button>
+                        <button class="check-courses-button">Szkolenia Janka</button>
                     </div>
                 </div>
                 <div class="swiper-slide our-trainers-swiper-slide">
@@ -250,7 +247,7 @@
                             invidunt ut labore et dolore magna</p>
                     </div>
                     <div>
-                        <button>Szkolenia Janka</button>
+                        <button class="check-courses-button">Szkolenia Adriana</button>
                     </div>
                 </div>
                 <div class="swiper-slide our-trainers-swiper-slide">
@@ -263,7 +260,7 @@
                             invidunt ut labore et dolore magna</p>
                     </div>
                     <div>
-                        <button>Szkolenia Janka</button>
+                        <button class="check-courses-button">Szkolenia Kasi</button>
                     </div>
                 </div>
                 <div class="swiper-slide our-trainers-swiper-slide">
@@ -276,7 +273,7 @@
                             invidunt ut labore et dolore magna</p>
                     </div>
                     <div>
-                        <button>Szkolenia Janka</button>
+                        <button class="check-courses-button">Szkolenia Kasi</button>
                     </div>
                 </div>
                 <div class="swiper-slide our-trainers-swiper-slide">
@@ -289,7 +286,7 @@
                             invidunt ut labore et dolore magna</p>
                     </div>
                     <div>
-                        <button>Szkolenia Janka</button>
+                        <button class="check-courses-button">Szkolenia Adriana</button>
                     </div>
                 </div>
                 <div class="swiper-slide our-trainers-swiper-slide">
@@ -302,7 +299,7 @@
                             invidunt ut labore et dolore magna</p>
                     </div>
                     <div>
-                        <button>Szkolenia Janka</button>
+                        <button class="check-courses-button">Szkolenia Adriana</button>
                     </div>
                 </div>
                 <div class="swiper-slide our-trainers-swiper-slide">
@@ -315,7 +312,7 @@
                             invidunt ut labore et dolore magna</p>
                     </div>
                     <div>
-                        <button>Szkolenia Janka</button>
+                        <button class="check-courses-button">Szkolenia Adriana</button>
                     </div>
                 </div>
                 <div class="swiper-slide our-trainers-swiper-slide">
@@ -328,7 +325,7 @@
                             invidunt ut labore et dolore magna</p>
                     </div>
                     <div>
-                        <button>Szkolenia Janka</button>
+                        <button class="check-courses-button">Szkolenia Adriana</button>
                     </div>
                 </div>
             </div>
@@ -341,7 +338,10 @@
     <header>
         <h1>Nasza wiedza</h1>
         <hr style="width: 100px; border: 3px solid var(--red);">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing
         </p>
         <button id="our-knowledge-button">Blog</button>
     </header>
@@ -357,7 +357,9 @@
                         <div>
                             <h4>Etyka w biznesie</h4>
                             <hr style="width: 50%; border: 5px solid red">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo</p>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et justo duo</p>
                         </div>
                     </div>
                     <div>
@@ -373,7 +375,9 @@
                         <div>
                             <h4>Etyka w biznesie</h4>
                             <hr style="width: 50%; border: 5px solid red">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo</p>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et justo duo</p>
                         </div>
                     </div>
                     <div>
@@ -389,7 +393,9 @@
                         <div>
                             <h4>Etyka w biznesie</h4>
                             <hr style="width: 50%; border: 5px solid red">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo</p>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et justo duo</p>
                         </div>
 
                     </div>
@@ -406,7 +412,9 @@
                         <div>
                             <h4>Etyka w biznesie</h4>
                             <hr style="width: 50%; border: 5px solid red">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo</p>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et justo duo</p>
                         </div>
                     </div>
                     <div>
@@ -422,7 +430,9 @@
                         <div>
                             <h4>Etyka w biznesie</h4>
                             <hr style="width: 50%; border: 5px solid red">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo</p>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et justo duo</p>
                         </div>
                     </div>
                     <div>
@@ -449,7 +459,10 @@
                 <h2>Szkolenia dla biznesu</h2>
                 <hr style="width: 15vw; border: 5px solid var(--red);">
             </header>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet</p>
             <div>
                 <button class="folder-button">Czytaj więcej</button>
             </div>
@@ -462,7 +475,10 @@
                 <h2>Akademia zdrowia</h2>
                 <hr style="width: 15vw; border: 5px solid var(--red);">
             </header>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet</p>
             <div>
                 <button class="folder-button">Czytaj więcej</button>
             </div>
@@ -475,7 +491,7 @@
 
 <section class="second-parallax">
     <div class="second-parallax-img-box">
-        <img src="assets/img/Obszar-roboczy-1.png" alt="logo" >
+        <img src="assets/img/Obszar-roboczy-1.png" alt="logo">
     </div>
     <div>
         <a href="#">
@@ -601,13 +617,6 @@
                 spaceBetween: 60
             },
         }
-    });
-    var swiper3 = new Swiper(".mySwiper3", {
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
     });
 </script>
 </body>
