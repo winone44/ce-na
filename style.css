@@ -460,7 +460,7 @@ h3 {
     overflow: hidden;
     border-radius: 50%;
     border: 2px solid var(--red);
-    width: 200px;
+    max-width: 200px;
 }
 
 .swiper-slide img {
@@ -649,7 +649,6 @@ h3 {
     background-color: var(--grey);
     padding: 20px;
     margin: 15px;
-
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -960,6 +959,7 @@ textarea:focus-within {
         background-color: var(--red);
         width: 100%;
     }
+
     #nav-links a {
         text-align: center;
         color: white;
@@ -979,14 +979,50 @@ textarea:focus-within {
 
     .first-section {
         padding-left: 25px;
+        flex-direction: column;
+    }
+
+    .first-section > div {
+        width: 100%;
+    }
+
+    .left-first-section > header > p {
+        font-size: 1rem;
+    }
+
+    .swiper-slide-img {
+        height: 90%;
     }
 
     .upcoming-training-courses {
         padding: 25px 0 25px 25px;
+        flex-direction: column;
+    }
+
+    .upcoming-training-courses > header {
+        width: 100%;
+    }
+
+    .courses {
+        flex-direction: column;
+    }
+
+    .course:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 
     .first-parallax {
         margin: 0 20px;
+    }
+
+    .first-parallax-red-box > header > p {
+        font-size: 1rem;
+        line-height: 1em;
+    }
+
+    .first-parallax-red-box > header {
+        max-width: 60%;
     }
 
     .our-knowledge {
@@ -996,9 +1032,9 @@ textarea:focus-within {
     }
 
     .our-knowledge > header {
-        width: 100%
+        width: 100%;
+        padding-right: 0;
     }
-
 
     .our-knowledge-content {
         margin-top: 40px;
@@ -1008,6 +1044,7 @@ textarea:focus-within {
     .folders {
         display: flex;
         flex-direction: column;
+        margin: 0;
     }
 
     .folder {
