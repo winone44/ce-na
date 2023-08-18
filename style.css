@@ -127,18 +127,26 @@ h3 {
     display: flex;
     justify-content: flex-start;
     padding-left: 50px;;
+    height: 80vh;
+}
+.first-section > div {
+    width: 50%;
 }
 
-.first-section > div > header > hr {
+.left-first-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.left-first-section > header > hr {
     float: left;
 }
 
-.first-section > div > header > p {
+.left-first-section > header > p {
+    font-size: 1.7rem;
     clear: both;
-}
-
-.first-section > div {
-    width: 50%;
 }
 
 .first-section-buttons {
@@ -149,13 +157,14 @@ h3 {
 #educate-yourself-button {
     font-family: 'Questrial', sans-serif;
     font-weight: bold;
-    padding: .4em .8em;
+    padding: .4em 1em;
     color: var(--white);
     background-color: var(--red);
-    border: 3px solid var(--red);
+    border: 4px solid var(--red);
     margin: 0;
     cursor: pointer;
     transition: .2s;
+    font-size: 1.5rem;
 }
 
 #educate-yourself-button:hover {
@@ -165,25 +174,28 @@ h3 {
 #contact-button {
     font-family: 'Questrial', sans-serif;
     font-weight: bold;
-    padding: .4em .8em;
+    padding: .4em 1em;
     color: var(--red);
     background-color: var(--white);
-    border: 3px solid var(--red);
+    border: 4px solid var(--red);
     margin: 0;
     cursor: pointer;
     transition: .2s;
+    font-size: 1.5rem;
 }
 
 #contact-button:hover {
     transform: scale(0.9);
 }
 
-.first-section-contact-buttons {
+.first-section-contact-buttons {;
     display: flex;
-    margin: 10px 0 0;
+    margin: 20px 0 0;
 }
 
 .first-section-contact-buttons > a > svg {
+    width: 20px;
+    height: 20px;
     color: var(--black);
     transition: .2s;
 }
@@ -205,6 +217,11 @@ h3 {
     filter: blur(0);
 }
 
+.swiper-slide-img {
+    position: relative;
+    height: 95%;
+}
+
 .swiper-pagination {
     text-align: left !important;
 }
@@ -220,7 +237,7 @@ h3 {
 }
 
 .upcoming-training-courses > header {
-    width: 30%;
+    width: 35%;
     padding-right: 20px;
 }
 
@@ -230,6 +247,7 @@ h3 {
 
 .upcoming-training-courses > header > p {
     clear: both;
+    font-size: 1.4rem;
 }
 
 .courses {
@@ -237,14 +255,50 @@ h3 {
     justify-content: flex-start;
 }
 
+.course {
+    background-color: var(--grey);
+    padding: 20px;
+    text-align: center;
+}
+
+.course:last-child {
+    background-color: var(--red);
+}
+
+.course:not(:last-child) {
+    margin-right: 10px;
+}
+
+.course-description {
+    margin-top: 20px;
+}
+
+.course > div > p {
+    font-size: 1rem;
+}
+
+.course > div > p > span {
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
 .course-image-box {
-    width: 30px;
-    height: 30px;
+    position: relative;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
+}
+
+.courses-image-box-watermark {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
 }
 
 .join-buttons {
     display: inline-flex;
+    margin: 20px 0 0 0;
 }
 
 .sign-up-button {
@@ -258,6 +312,13 @@ h3 {
     cursor: pointer;
     transition: .2s;
 }
+
+.course:last-child .join-buttons > .sign-up-button {
+    color: var(--black);
+    background-color: var(--white);
+    border: 3px solid var(--white);
+}
+
 
 .sign-up-button:hover {
     transform: scale(0.9);
@@ -273,6 +334,12 @@ h3 {
     margin: 0;
     cursor: pointer;
     transition: .2s;
+}
+
+.course:last-child .join-buttons > .contact-button {
+    color: var(--white);
+    background-color: var(--red);
+    border: 3px solid var(--white);
 }
 
 .contact-button:hover {
@@ -367,8 +434,10 @@ h3 {
 /*    object-position: center;*/
 /*}*/
 
+
 .our-trainers > header > h1 {
     text-align: center;
+    margin-top: 50px;
 }
 
 .mySwiper2 {
@@ -377,13 +446,14 @@ h3 {
 }
 
 .our-trainers-swiper-slide {
+    height: 600px !important;
     font-size: 18px;
     background: #fff;
     display: flex !important;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    justify-content: space-around;
 }
 
 .our-trainers-slide-img {
@@ -400,6 +470,16 @@ h3 {
     object-fit: cover;
 }
 
+.our-trainers-swiper-slide > div > h1 {
+    margin: 20px;
+}
+
+.our-trainers-swiper-slide > div > p {
+    font-weight: bolder;
+    margin: 20px;
+    font-size: 1rem;
+}
+
 .check-courses-button {
     font-family: 'Questrial', sans-serif;
     background-color: var(--red);
@@ -409,6 +489,8 @@ h3 {
     transition: .2s;
     cursor: pointer;
     font-weight: bold;
+    margin: 20px;
+    font-size: 1.3rem;
 }
 
 .check-courses-button:hover {
@@ -424,7 +506,7 @@ h3 {
 
 .our-knowledge > header {
     width: 40vw;
-
+    padding-right: 200px;
 }
 
 .our-knowledge > header > hr {
@@ -434,6 +516,7 @@ h3 {
 .our-knowledge > header > p {
     line-height: 1.5;
     clear: both;
+    font-size: 1.2rem;
 }
 
 .our-knowledge-content {
@@ -505,6 +588,12 @@ h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.watermark {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
 }
 
 .slider-item-text {
@@ -781,7 +870,7 @@ textarea:focus-within {
     }
 
     h3 {
-        font-size: .5rem;
+        font-size: .8rem;
     }
 
 
