@@ -3,13 +3,13 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('/assets/font/Gilroy-Light.otf');
+    src: url('./assets/font/Gilroy-Light.otf');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('/assets/font/Gilroy-ExtraBold.otf');
+    src: url('./assets/font/Gilroy-ExtraBold.otf');
     font-weight: 800;
 }
 
@@ -507,10 +507,14 @@ h3 {
 .our-knowledge > header {
     width: 40vw;
     padding-right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .our-knowledge > header > hr {
-    float: left;
+    text-align: left;
 }
 
 .our-knowledge > header > p {
@@ -658,7 +662,10 @@ h3 {
 }
 
 .folder > p {
+    font-family: 'Questrial', sans-serif;
+    font-weight: bold;
     margin: 20px 0;
+    font-size: 1.2rem;
 }
 
 .folder-image-box {
@@ -677,9 +684,11 @@ div img {
 .folder-button {
     font-family: 'Questrial', sans-serif;
     font-weight: bold;
+    font-size: 1.3rem;
     background-color: var(--red);
     border: 0;
     color: var(--white);
+    margin-top: 20px;
     padding: .8em 2em;
     cursor: pointer;
     transition: .2s;
@@ -692,10 +701,11 @@ div img {
 #folders-button {
     font-family: 'Questrial', sans-serif;
     font-weight: bold;
+    font-size: 1.3rem;
     background-color: var(--red);
     border: 0;
     color: var(--white);
-    padding: 10px 60px;
+    padding: 15px 50px;
     cursor: pointer;
     transition: .2s;
 }
@@ -705,6 +715,7 @@ div img {
 }
 
 .second-parallax {
+    position: relative;
     background-image: url("assets/img/20230606_172256.png");
     min-height: 500px;
     background-attachment: fixed;
@@ -714,13 +725,67 @@ div img {
 }
 
 .second-parallax-img-box {
+    position: absolute;
     width: 200px;
     height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .second-parallax-img-box > img {
     width: 100%;
 }
+
+.second-parallax-contact {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.second-parallax-contact > a {
+    color: white;
+}
+
+.second-parallax-contact > a:hover {
+    color: black;
+}
+
+.second-parallax-contact > a:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.second-parallax-contact > a > svg {
+    height: 20px;
+    width: 20px;
+}
+
+/*.first-parallax-red-box > aside {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    margin-right: 20px;*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*.first-parallax-red-box > aside > a {*/
+/*    color: white;*/
+/*}*/
+
+/*.first-parallax-red-box > aside > a:hover {*/
+/*    color: black;*/
+/*}*/
+
+/*.first-parallax-red-box > aside > a:not(:last-child){*/
+/*    margin-bottom: 15px;*/
+/*}*/
+
+/*.first-parallax-red-box > aside > a > svg {*/
+/*    height: 20px;*/
+/*    width: 20px;*/
+/*}*/
 
 footer {
     background-color: var(--red);
