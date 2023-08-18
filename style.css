@@ -233,12 +233,12 @@ h3 {
 .upcoming-training-courses {
     display: flex;
     justify-content: flex-start;
-    padding: 50px 0 50px 50px;
+    padding: 40px;
 }
 
 .upcoming-training-courses > header {
-    width: 35%;
-    padding-right: 20px;
+    width: 30%;
+    padding: 0 100px 0 40px;
 }
 
 .upcoming-training-courses > header > hr {
@@ -259,6 +259,10 @@ h3 {
     background-color: var(--grey);
     padding: 20px;
     text-align: center;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .course:last-child {
@@ -995,13 +999,15 @@ textarea:focus-within {
     }
 
     .upcoming-training-courses {
-        padding: 25px 0 25px 25px;
+        padding: 25px 25px 25px 25px;
         flex-direction: column;
     }
 
     .upcoming-training-courses > header {
         width: 100%;
+        padding: 0;
     }
+
 
     .courses {
         flex-direction: column;
