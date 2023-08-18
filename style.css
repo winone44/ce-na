@@ -742,7 +742,7 @@ div img {
 
 .second-parallax-contact {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 10px;
     transform: translate(-50%, -50%);
     display: flex;
@@ -996,6 +996,9 @@ textarea:focus-within {
 
     .swiper-slide-img {
         height: 90%;
+    }
+    .main-swiper-slide {
+        filter: blur(0px);
     }
 
     .upcoming-training-courses {
