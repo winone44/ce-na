@@ -1008,7 +1008,7 @@ textarea:focus-within {
     }
 
     .main-swiper-slide {
-        filter: blur(0px);
+        filter: none;
     }
 
     .upcoming-training-courses {
