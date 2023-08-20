@@ -215,7 +215,7 @@ h3 {
 }
 
 .swiper-slide-active, .swiper-slide-next, .swiper-slide-prev {
-    filter: blur(-1px);
+    filter: none;
 }
 
 .swiper-slide-img {
