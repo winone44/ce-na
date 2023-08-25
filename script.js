@@ -75,3 +75,33 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+// Swiper config
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    slidesPerView: 1.5,
+    spaceBetween: 10,
+    breakpoints: {
+        900: {
+            slidesPerView: 2.5,
+            spaceBetween: 10
+        },
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+var swiper2 = new Swiper(".mySwiper2", {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 60,
+    centeredSlides: true,
+    breakpoints: {
+        900: {
+            slidesPerView: 4,
+            spaceBetween: 60
+        },
+    }
+});
