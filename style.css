@@ -24,13 +24,9 @@
     --swiper-pagination-bullet-inactive-opacity: 1;
 }
 
-/*div {*/
-/*    border: 1px solid black;*/
-/*}*/
 
 * {
     font-family: 'Gilroy', sans-serif;
-    /*font-family: 'Questrial', sans-serif;*/
 }
 
 
@@ -412,34 +408,6 @@ h3 {
     width: 20px;
 }
 
-/*.our-trainers-slider-item {*/
-/*    width: 230px;*/
-/*    height: 500px !important;*/
-/*    text-align: center;*/
-/*    padding: 30px 20px;*/
-/*    display: flex !important;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    flex-direction: column;*/
-/*}*/
-
-/*.our-trainers-slide-img {*/
-/*    width: 200px;*/
-/*    height: 200px;*/
-/*    overflow: hidden;*/
-/*    border-radius: 50%;*/
-/*    border: 2px solid var(--red);*/
-/*}*/
-
-/*.our-trainers-slide-img img {*/
-/*    display: block;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    object-fit: cover;*/
-/*    object-position: center;*/
-/*}*/
-
-
 .our-trainers > header > h1 {
     text-align: center;
     margin-top: 50px;
@@ -767,29 +735,6 @@ div img {
     width: 20px;
 }
 
-/*.first-parallax-red-box > aside {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    margin-right: 20px;*/
-/*    margin-bottom: 5px;*/
-/*}*/
-
-/*.first-parallax-red-box > aside > a {*/
-/*    color: white;*/
-/*}*/
-
-/*.first-parallax-red-box > aside > a:hover {*/
-/*    color: black;*/
-/*}*/
-
-/*.first-parallax-red-box > aside > a:not(:last-child){*/
-/*    margin-bottom: 15px;*/
-/*}*/
-
-/*.first-parallax-red-box > aside > a > svg {*/
-/*    height: 20px;*/
-/*    width: 20px;*/
-/*}*/
 
 footer {
     background-color: var(--red);
